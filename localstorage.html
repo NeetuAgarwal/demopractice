@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+<div id="result">
+</div>
+<script>
+	if(typeof(Storage)!= undefined){
+		localStorage.setItem("Name","Neetu Agarwal");
+		document.getElementById("result").innerHTML = localStorage.getItem("Name");
+		//localStorage.removeItem("Name");
+	}
+	else{
+		document.getElementById("result").innerHTML = "Sorry, Your browser not support web storage";
+	}
+</script>
+</body>
+</html>
