@@ -10,8 +10,11 @@
 		document.getElementById("result").innerHTML = localStorage.getItem("Name");
 		//localStorage.removeItem("Name");
 	}
-	else{
+	else if(typeof(Storage) == undefined){
 		document.getElementById("result").innerHTML = "Sorry, Your browser not support web storage";
+	}
+	else{
+		document.getElementById("result").innerHTML = "Heelo This is not working";
 	}
 </script>
 </body>
